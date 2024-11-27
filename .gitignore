@@ -1,0 +1,27 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore virtual env files
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore IDE conf files 
+.vscode/
+.idea/
+*.swp
+
+# Ignore logs
+*.log
+
+# Ignore figures
+fig/*
+
+# Ignore trained models
+models/*
