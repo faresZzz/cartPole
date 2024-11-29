@@ -1,13 +1,12 @@
 from enum import Enum
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
-from cartPole import CartPole
 
 class Strategy(Enum):
-    RANDOM = "random"
-    TRAINED = "trained"
-    LOAD_AND_APPLY = "load_and_apply"
-    TRAIN_AND_APPLY = "train_and_apply"
+    RANDOM = "random" # Use random actions ( use it to compare performances of our trained algo over randomness)
+    TRAINED = "trained" #Use the already trained Q-table 
+    LOAD_AND_APPLY = "load_and_apply" # Use one trained Q-table from saved file
+    TRAIN_AND_APPLY = "train_and_apply" # Tain and simulate the Q-table 
 
 class ActionStrategy(Enum):
     RANDOM = "random"
@@ -16,11 +15,11 @@ class ActionStrategy(Enum):
 
 
 
-def plot_rewards(cartPole: CartPole, file_path : str = "."):
+def plot_rewards(rewards : list[float], epochs : int, file_path : str = "."):
         plt.figure(figsize=(12, 5))
-        plt.plot(cartPole.Q_learning.rewards, color='blue', linewidth=1)
+        plt.plot(rewards, color='blue', linewidth=1)
         plt.xlabel('Epoch')
         plt.ylabel('Sum of Rewards in Epoch')
         plt.yscale('log')
-        plt.savefig(f"{file_path}convergence_{cartPole.parameters['NUMBER_OF_EPOCH']}_epoch.png")
+        plt.savefig(f"{file_path}convergence_{epochs}_epoch.png")
         plt.show()

@@ -12,7 +12,7 @@
 ## Introduction
 
 The Cart-Pole Q-Learning project demonstrates the application of reinforcement learning to solve the classic Cart-Pole control problem. Using the Q-learning algorithm, the agent learns to balance a pole on a moving cart by applying horizontal forces. This project provides an implementation of Q-learning, highlights its key concepts, and showcases how the agent evolves through training to maximize its performance in the environment.
-![Cart-Pole Environment](fig/cartpole.png)
+![Cart-Pole Environment](fig/cart_pole.png)
 
 
 ## Running the Scripts

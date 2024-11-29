@@ -15,5 +15,5 @@
     "ALPHA": 0.1,
     "GAMMA": 1,
     "EPSILON": 0.2,
-    "NUMBER_OF_EPOCH": 30000
+    "NUMBER_OF_EPOCH": 15000
 }
