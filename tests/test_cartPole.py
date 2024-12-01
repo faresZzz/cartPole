@@ -1,7 +1,7 @@
 import json
 import unittest
 import numpy as np
-from cart_pole.cartPole import CartPole
+from cartpole.cartPole import CartPole
 
 class TestCartPole(unittest.TestCase):
 

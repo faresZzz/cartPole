@@ -25,16 +25,20 @@ pip install -r requirements.txt
 ```
 
 
-0. **main.py** - This script is for running the whole pipeline.
-1. **tests** - This script is for running the test d
-
-## Project Structure
-
+0. **main.py** 
+    - This script is for running the whole pipeline.
+1. **tests.py** 
+    - This script is for running the test suite
+    - Firt you will need to install your project in editable state
+```shell
+pip install -e .
 ```
 
+## Project Structure
+```
 CartPole/
 │
-├── cart_pole/  project material
+├── cartpole/  project material
 │   ├── __init__.py/  
 │   ├── CartPole.py/ # Cart Pole env handeling  
 │   ├── main.py/ # entry point 
@@ -55,6 +59,7 @@ CartPole/
 │   
 ├── .gitignore
 ├── README.md # This file
+├── pyproject.toml # setup file to build project ass package
 └── requirements.txt # Python dependencies
 ```
 

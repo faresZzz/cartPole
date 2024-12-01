@@ -1,7 +1,8 @@
 import unittest
 import numpy as np
-from Q_learning import Q_Learning
+from cartpole.Q_learning import Q_Learning
 import gymnasium as gym
+
 class TestQLearning(unittest.TestCase):
     
     def setUp(self):
@@ -34,7 +35,7 @@ class TestQLearning(unittest.TestCase):
     def test_select_action_greedy(self):
         state = (0, 0, 0, 0)
         action = self.q_learning.select_action_greedy(state)
-        self.assertIn(action, range(self.q_learning.actionNumber))
+        self.assertIn(action, (i for i in range(self.q_learning.actionNumber)))
     
     def test_learn(self):
         state = (0, 0, 0, 0)
