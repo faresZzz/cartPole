@@ -1,4 +1,4 @@
-# CS433 Machine Learning Project 1 - Group Project
+# Cart Pole Q-learning project 
 
 ## Table of Contents
 
